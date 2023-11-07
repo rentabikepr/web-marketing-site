@@ -1,3 +1,6 @@
 baseURL = 'https://www.rentabikepr.com'
 languageCode = 'en-us'
 title = 'PR Bike Rentals'
+
+[build]
+  writeStats = true

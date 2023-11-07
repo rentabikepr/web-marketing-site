@@ -44,7 +44,10 @@
   <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
   <!-- Template Main CSS File -->
-  <link href="/assets/css/style.css" rel="stylesheet" />
+  {{ $css := resources.Get "css/style.css" }}
+  {{ $css = $css | resources.PostCSS (dict "useResourceCache" false) }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">
+
 
   <!---->
 </head>
