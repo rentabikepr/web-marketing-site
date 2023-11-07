@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /admin/
 
-Sitemap: https://www.rentabikepr.com/sitemap.xml
+Sitemap: https://rentabikepr.com/sitemap.xml
